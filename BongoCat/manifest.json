@@ -1,0 +1,25 @@
+{
+    "manifest_version": 3,
+    "name": "Let's Bongo",
+    "description": "This is cute Bongo Cat5",
+    "version": "1.0",
+    "icons": {
+        "16": "images/left.png",
+        "32": "images/left.png",
+        "48": "images/left.png",
+        "128": "images/left.png"
+    },
+    "permissions":["tabs","webNavigation"],
+    "content_scripts":[
+        {
+            "matches":["<all_urls>"],
+            "js":["script.js"]
+        }
+    ],
+    "action":{
+        "default_icon":"images/right.png",
+        "default_title":"Bongo",
+        "default_popup":"popup.html"
+    }
+    
+}
