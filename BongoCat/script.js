@@ -27,7 +27,7 @@
 //     image.src = "images/right.png";
 // }
 
-
+let imgURL=chrome.extension.getURL('images/left.png');
 let a=0;
 function count() {
     a=(a+1)%2;
@@ -37,4 +37,15 @@ function count() {
         document.getElementById('img').src="images/left.png";
     }
 }
-document.getElementById('img').onclick = count;
+// document.getElementById('img').onclick = count;
+//keydown이벤트는 img element에서 작동불가
+document.addEventListener("keydown",count);
+
+function togglestate(toggle){
+    const left_px=parseInt($('#'+toggle).css('left'));
+    if(left_px){
+        //여기다가 화면에 띄우도록
+    }else{
+
+    }
+}

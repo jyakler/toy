@@ -9,11 +9,12 @@
         "48": "images/left.png",
         "128": "images/left.png"
     },
-    "permissions":["tabs","webNavigation"],
+    "permissions":["activeTab"],
     "content_scripts":[
         {
             "matches":["<all_urls>"],
-            "js":["script.js"]
+            "js":["script.js"],
+            "css":["style.css"]
         }
     ],
     "action":{
