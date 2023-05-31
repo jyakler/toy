@@ -27,7 +27,7 @@
 //     image.src = "images/right.png";
 // }
 
-let imgURL=chrome.extension.getURL('images/left.png');
+// let imgURL=chrome.extension.getURL('images/left.png');
 let a=0;
 function count() {
     a=(a+1)%2;
@@ -49,3 +49,10 @@ function togglestate(toggle){
 
     }
 }
+
+// const init=function(){
+//     const injectElement = document.createElement("img");
+//     injectElement.src=chrome.runtime.getURL("images/left.png");
+//     document.body.appendChild(injectElement);
+// }
+// init();

@@ -1,0 +1,21 @@
+{
+    "manifest_version": 3,
+    "name": "Let's Bongo new",
+    "description": "This is cute Bongo Cat",
+    "version": "1.0",
+    "icons": {
+        "16": "images/left.png",
+        "32": "images/left.png",
+        "48": "images/left.png",
+        "128": "images/left.png"
+    },
+    "web_accessible_resources":[{
+        "resources":["images/left.png","images/right.png"],
+        "matches":["<all_urls>"]
+    }],
+    "background":{
+        "service_worker":"content.js"
+    },
+    "host_permissions":["<all_urls>"],
+    "permissions":["scripting"]
+}
